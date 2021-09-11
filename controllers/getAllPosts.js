@@ -5,11 +5,11 @@ exports.getAllPosts = async (req, res) => {
         let query = Post.find();
 
         const page = parseInt(req.query.page) || 1;
-        const pageSize = parseInt(req.query.limit) || 50; //limit of documents on a page
+        const pageSize = parseInt(req.query.limit) || 25; //limit of documents on a page
         const skip = (page - 1) * pageSize; 
         const total = await Post.countDocuments();
 
-        const pages = Math.ceil(total / pageSize); //500 / 50
+        const pages = Math.ceil(total / pageSize);
 
         if(page > pages){
             return res.status(404).json({
