@@ -1,0 +1,27 @@
+.app {
+  max-width: 1400px;
+}
+
+.app__posts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.image__app{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.loading-text,
+.error-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.error-text {
+  color: red;
+}

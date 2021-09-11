@@ -1,0 +1,19 @@
+.pagination {
+    padding-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    margin-right: 0.5rem;
+    cursor: pointer;
+    padding: 7px 15px;
+}
+
+.pagination button:disabled {
+    background-color: rgb(221, 50, 87);
+    color: white;
+    cursor: not-allowed;
+}
